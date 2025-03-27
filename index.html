@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>My Portfolio</h1>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('education')">Education</a></li>
+            <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section (Now Includes Profile Photo) -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic">
+        <p>I'm a passionate web developer specializing in front-end and back-end technologies.</p>
+    </div>
+
+    <!-- Education Section -->
+    <div id="education" class="section hidden">
+        <h2>Education</h2>
+        <ul>
+            <li><b>Bachelor's in Computer Science</b> - XYZ University (2018-2022)</li>
+            <li><b>Web Development Bootcamp</b> - Udemy (2023)</li>
+        </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section hidden">
+        <h2>Skills</h2>
+        <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <span>JavaScript & React</span>
+            <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+            <span>Python & Django</span>
+            <div class="progress"><div class="progress-bar" style="width: 75%;"></div></div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="section hidden">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio to showcase my skills and projects.</p>
+            <a href="https://yourportfolio.com" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+            <h3>E-commerce Website</h3>
+            <p>A fully functional online store with a cart and payment integration.</p>
+            <a href="https://github.com/yourusername/ecommerce" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+
+</body>
+                  </html>
